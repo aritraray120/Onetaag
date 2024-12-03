@@ -1,0 +1,114 @@
+.work-display {
+    padding: 20px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.heading h2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 70%;
+}
+
+.heading button {
+    width: 150px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.heading button:hover {
+    background: #333;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.work-container > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 1 calc(25% - 20px); 
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    max-width: calc(25% - 20px);
+}
+
+.step-01 {
+    background-image: url('../../assets/rectangle_01.png');
+}
+
+.step-02 {
+    background-image: url('../../assets/rectangle_02.png');
+}
+
+.step-03 {
+    background-image: url('../../assets/rectangle_03.png');
+}
+
+.step-04 {
+    background-image: url('../../assets/rectangle_04.png');
+}
+
+.work-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.work-container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.work-container p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.step-description {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 1024px) {
+    .work-container > div {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    .heading h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-container > div {
+        flex: 1 1 100%; 
+    }
+
+    .heading h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+}

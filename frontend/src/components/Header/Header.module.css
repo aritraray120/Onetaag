@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3%;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+    margin-bottom: 30px;
+}
+
+.navbar .logo {
+    width: 110px; 
+    height: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5.4vw; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    flex-wrap: wrap; 
+    width: 100%; 
+    max-width: 935px; 
+    margin-left: 0vw;
+}
+
+
+.navbar-menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+     
+}
+
+.navbar-right button {
+    background: #000000;
+    font-size: 15px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 26px;
+    font-weight: 500;
+    padding: 10px 20px; 
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.navbar-right .teams-btn {
+    width: 178px;
+    height: 50px;
+    min-width: 120px; 
+    max-width: 185px; 
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 26px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+}
+
+.navbar-right .teams-btn:hover {
+    background: #333333; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar-right .teams-btn:active {
+    transform: scale(0.95); 
+    background: #555555; 
+}
+
+.navbar-right .login-btn {
+    width: 146px;
+    height: 50px;
+    min-width: 100px; 
+    max-width: 146px; 
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 26px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+}
+
+.navbar-right .login-btn:hover {
+    background: #333333; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar-right .login-btn:active {
+    transform: scale(0.95); 
+    background: #555555; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .navbar-menu {
+        justify-content: center;
+        gap: 15px; 
+        font-size: 14px; 
+        width: 100%; 
+    }
+
+    .navbar-right {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-menu {
+        font-size: 12px; 
+        gap: 10px;
+    }
+
+    .navbar-right button {
+        font-size: 12px; 
+        padding: 8px 15px; 
+    }
+}
+
+
